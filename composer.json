@@ -1,0 +1,30 @@
+{
+    "name": "zekini/code-checkers",
+    "description": "Standard code checkers to be included in all Zekini repos",
+    "type": "library",
+    "require-dev": {
+        "symplify/easy-coding-standard": "^9.3",
+        "nunomaduro/larastan": "^0.7.0",
+        "vimeo/psalm": "^4.7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Zekini\\CodeCheckers\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Zekini\\CodeCheckers\\CodeCheckersServiceProvider"
+            ]
+        }
+    },
+    "authors": [
+        {
+            "name": "Llewellyn du Randt",
+            "email": "llewellyn@zekini.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
